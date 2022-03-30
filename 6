@@ -1,20 +1,19 @@
 main(){
-  int a=0;
-  var max;
-var arr = List<int>.filled(10, 0);
-for(int i=0;i<10;i++){
+List<int> lst=[];
+int i,max;
+for(i=0;i<10;i++){
   stdout.write("Enter value :");
-  int values = int.parse(stdin.readLineSync()!);
-  values=a;
+  int value=int.parse(stdin.readLineSync()!);
+  lst.add(value);
 }
-
-max=arr[a];
-for(int i=0;i<10;i++){
-  if(max<arr[a]){
-    max=arr[a];
+max=lst[0];
+for(i=0;i<10;i++){
+  if(max<lst[i]){
+    {
+      max=lst[i];
+    }
   }
 }
-  print("Maximum value : ");
-     
+print("Maximum value : $max");
 
 }
