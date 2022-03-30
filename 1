@@ -1,0 +1,14 @@
+main() {
+  var i;
+  final numbers = List<int>.filled(5, 0);
+
+  for (i = 0; i < 5; i++) {
+    stdout.write("Enter Integers:");
+    var num = stdin.readLineSync();
+    numbers[i] = int.tryParse(num!) ?? 0;
+  }
+  print("The values in array are : ");
+
+  print(" $numbers ");
+
+}
