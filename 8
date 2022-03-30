@@ -1,0 +1,17 @@
+main(){
+List<int> lst=[];
+int i;
+for(i=0;i<5;i++){
+  stdout.write("Enter value :");
+  int value=int.parse(stdin.readLineSync()!);
+  lst.add(value);
+}
+print("The array in actual order");
+for(i=0;i<=5;i++){
+  print(" ${lst[i]}");
+}
+print("The array in reverse order");
+for(i=5;i>=0;i--){
+  print(" ${lst[i]}");
+}
+}
