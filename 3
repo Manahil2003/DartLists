@@ -1,0 +1,21 @@
+main() {
+  var total;
+  final numbers = <int>[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+  stdout.write("Enter the month number");
+  var monthInStr = stdin.readLineSync();
+  var month = int.tryParse(monthInStr!);
+
+  stdout.write("Enter the day number");
+  var dayInStr = stdin.readLineSync();
+  var day = int.tryParse(dayInStr!);
+
+  var a = month! - 1;
+  total = day;
+  for (int x = 0; x < a; x++) {
+    var DaysPerMont = stdin.readLineSync();
+    numbers[a] = int.tryParse(DaysPerMont!) ?? 0;
+    total += numbers[x];
+    print("Total : $total");
+  }
+}
