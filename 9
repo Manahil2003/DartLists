@@ -1,0 +1,21 @@
+main(){
+List<int> lst=[10,20,30,40,50,60,70,80,90,100];
+int i,loc=-1;
+int? a;
+
+  stdout.write("Enter value :");
+  int value=int.parse(stdin.readLineSync()!);
+  lst.add(value);
+  
+
+for(i=0;i<10;i++){
+  if(lst[i]==value){
+    loc=i;
+    if(loc==1){
+      print("Value not found in the array");
+    }
+    else{
+      print("Value found at index $loc");
+    }
+  }
+}
