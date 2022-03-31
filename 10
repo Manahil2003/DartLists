@@ -1,0 +1,30 @@
+main(){
+final List lst=[10,20,30,40,50,60,70,80,90,100];
+var loc=-1,start=0,end=9,mid;
+
+
+  stdout.write("Enter value :");
+  var value=int.parse(stdin.readLineSync()!);
+  lst.add(value);
+  
+  while(start<=end){
+    mid=(start+end)/2;
+    if(lst[mid]==value){
+      loc=mid;
+      break;
+    }
+    else if(value<lst[mid]){
+      end=mid-1;
+    }
+    else{
+      start=mid+1;
+    }
+  if(loc==-1){
+    print("$value not found");
+  }
+  else{
+    print("$value found at index  $loc");
+  }
+  }
+
+}
